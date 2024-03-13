@@ -284,8 +284,5 @@ router.get('/logout', authenticate, (req, res) => {
     res.clearCookie('tokenname').status(200).send({ message: "logout successful" });
 });
 
-router.get('*', (req, res) => {
-    res.redirect('/');
-});
 
 module.exports = (router);
