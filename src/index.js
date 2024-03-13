@@ -19,7 +19,7 @@ app.use(cors({
 app.use(express.static('frontend/dist'));
 app.use(express.json());
 
-app.use(require('./router/router'));
+app.use(require('./Router/router'));
 require("./db/conn");
 
 app.listen(PORT, () => {
