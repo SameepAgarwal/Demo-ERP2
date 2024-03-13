@@ -17,39 +17,39 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Navbar />} />
+        <Route exact path='/' element={<Navbar />} />
 
-        <Route path='/signin' element={
+        <Route exact path='/signin' element={
           <div>
             <SignIn />
           </div>
         } />
-        <Route path='/login' element={
+        <Route exact path='/login' element={
           <div>
             <LogIn />
           </div>
         } />
-        <Route path='/admin' element={
+        <Route exact path='/admin' element={
           <Basefile >
             <Dashboard />
           </Basefile>
         } />
-        <Route path='/addclass' element={
+        <Route exact path='/addclass' element={
           <Basefile >
             <AddClass />
           </Basefile>
         } />
-        <Route path='/section/:class_id/:section_id' element={
+        <Route exact path='/section/:class_id/:section_id' element={
           <Basefile >
             <Section />
           </Basefile>
         } />
-        <Route path='/section/:class_id' element={
+        <Route exact path='/section/:class_id' element={
           <Basefile >
             <Section />
           </Basefile>
         } />
-        <Route path='/print' element={
+        <Route exact path='/print' element={
           <Print />
         } />
         <Route path='*' element={
