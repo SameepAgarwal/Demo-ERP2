@@ -4,9 +4,9 @@ const UserModel = require('../model/userSchema');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
 
-router.get('/', (req, res) => {
-    res.send('Hii from this Side');
-});
+// router.get('/', (req, res) => {
+//     res.send('Hii from this Side');
+// });
 
 router.get('/getdata', async (req, res) => {
     const data = await ClassModel.find();
